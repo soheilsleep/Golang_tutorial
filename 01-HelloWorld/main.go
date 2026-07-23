@@ -2,12 +2,10 @@ package main
 
 import "fmt"
 
-func init()
-{
-fmt.println("init")
+func init(){
+fmt.Println("init")
 }
 
-func main()
-{
-fmt.println("Hello World")
+func main(){
+fmt.Println("Hello World")
 }

@@ -2,6 +2,7 @@ package main
 import (
 	"fmt"
 	"unsafe"
+	"math/bits"
 	
 )
 func main()  {
@@ -19,4 +20,12 @@ func main()  {
 
 	var a = bits.UintSize
 	fmt.Println(a)
+
+	var fnum float32 = 10.3
+	var fnum8 float64 
+
+	fmt.Printf("fnum  %d bytes \n" , unsafe.Sizeof(fnum))
+	fmt.Printf("fnum8  %d bytes \n" , unsafe.Sizeof(fnum8))
+
+	
 }

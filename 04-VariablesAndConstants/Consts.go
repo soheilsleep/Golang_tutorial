@@ -1,20 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func main(){
+func main() {
 	const (
-		name = "soheilsleep"
+		name   = "soheilsleep"
 		number = 26
-		city = "ahvaz"
-		pi = 3.14
-		)
+		city   = "ahvaz"
+		pi     = 3.14
+	)
 
-		fmt.Printf("name : %s number : %d city:%s pi: %f \n", name, number, city, pi)
+	fmt.Printf("name : %s number : %d city:%s pi: %f \n", name, number, city, pi)
 
-		const GoogleBaseUrl = "https://www.google.com"
-		const MapUrl = "/maps"
+	const GoogleBaseUrl = "https://www.google.com"
+	const MapUrl = "/maps"
 
-		fmt.Println(GoogleBaseUrl, MapUrl)
-		
+	fmt.Println(GoogleBaseUrl, MapUrl)
+
 }

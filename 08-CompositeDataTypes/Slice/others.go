@@ -1,0 +1,29 @@
+package main
+
+import "fmt"
+
+func main() {
+	//add something in the middle of a slice
+	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	//1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+	//1, 2, 3, 4, 5, 6, 7, 75 , 8, 9, 10
+	numbers = append(numbers, 0)
+	//1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0
+	_ = copy(numbers[8:], numbers[7:])
+	//1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0
+	//1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10, 0
+	numbers[7] = 75
+	fmt.Printf("%v\n", numbers)
+	//remove something in the middle of a slice
+	numbers = append(numbers[:7], numbers[8:]...)
+	fmt.Printf("%v\n", numbers)
+	numbers = numbers[:0]
+	fmt.Printf("%v\n", numbers)
+	fmt.Printf("%d\n", len(numbers))
+	fmt.Printf("%d\n", cap(numbers))
+
+	numbers = nil
+	fmt.Printf("%v\n", numbers)
+	fmt.Printf("%d\n", len(numbers))
+	fmt.Printf("%d\n", cap(numbers))
+}

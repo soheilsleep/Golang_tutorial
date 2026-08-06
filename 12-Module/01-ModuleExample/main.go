@@ -5,6 +5,7 @@ import (
 
 	jalaali "github.com/jalaali/go-jalaali"
 	"github.com/soheilsleep/ModuleExample/services"
+	Math "github.com/soheilsleep/TestModule"
 )
 
 func main() {
@@ -17,4 +18,6 @@ func main() {
 	}
 	var service services.TestService = services.TestService{}
 	fmt.Printf("%v\n", service)
+	test := Math.Plus(1, 2)
+	println(test)
 }

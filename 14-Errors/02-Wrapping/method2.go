@@ -17,7 +17,7 @@ func main() {
 	err := CopyFile1("src.txt", "dst.txt")
 	if err != nil {
 		fmt.Println(err)
-		fmt.Printf("Unwarpped error: %s\n", errors.Unwrap(err))
+		fmt.Printf("Unwrapped error: %s\n", errors.Unwrap(err))
 	}
 }
 func (error *IOError) Unwrap() error {

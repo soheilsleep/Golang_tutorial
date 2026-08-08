@@ -39,3 +39,4 @@ func GetRequest(url string) (string, error) {
 	}
 	return string(responseBody), nil
 }
+

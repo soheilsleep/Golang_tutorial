@@ -1,0 +1,7 @@
+{"level":"error","AppName":"MyApp","entityInfo":{"Id":1,"UserFullName":"soheil kazemi","UserId":"09399850797","Price":100,"Status":true,"NotificationType":"email"},"error":"Order price is less than 1000","time":"2026-08-09T23:26:32+03:30","message":"Error creating order"}
+{"level":"info","AppName":"MyApp","order":{"Id":2,"UserFullName":"erfan mohseni","UserId":"09154857498","Price":200,"Status":true,"NotificationType":"sms"},"time":"2026-08-09T23:26:32+03:30","message":"Order Created:"}
+{"level":"info","AppName":"MyApp","Notifier":{"Id":2,"UserFullName":"erfan mohseni","UserId":"09154857498","Price":200,"Status":true,"NotificationType":"sms"},"time":"2026-08-09T23:26:32+03:30","message":"Notifier found:"}
+{"level":"info","AppName":"MyApp","notifier":"smsService","messageInfo":{"receiver":"09154857498","message":"Order Created"},"time":"2026-08-09T23:26:32+03:30","message":"msg sent"}
+{"level":"info","AppName":"MyApp","order":{"Id":3,"UserFullName":"taha dehanvi","UserId":"","Price":150,"Status":true,"NotificationType":"nill"},"time":"2026-08-09T23:26:32+03:30","message":"Order Created:"}
+{"level":"info","AppName":"MyApp","Notifier":{"Id":3,"UserFullName":"taha dehanvi","UserId":"","Price":150,"Status":true,"NotificationType":"nill"},"time":"2026-08-09T23:26:32+03:30","message":"Notifier found:"}
+{"level":"error","AppName":"MyApp","entityInfo":{"Id":3,"UserFullName":"taha dehanvi","UserId":"","Price":150,"Status":true,"NotificationType":"nill"},"error":"receiver is empty","time":"2026-08-09T23:26:32+03:30","message":"Error creating order"}

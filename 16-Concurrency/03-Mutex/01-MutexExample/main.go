@@ -16,6 +16,7 @@ func main() {
 	var TotalBalance int64 = 25_500_000_000
 	employeeSalaryList := []Employee{}
 	wg.Add(5000)
+
 	for i := 0; i < 5_000; i++ {
 		employeeSalaryList = append(employeeSalaryList, Employee{ID: i, Salary: GetRandomNumber()})
 	}
